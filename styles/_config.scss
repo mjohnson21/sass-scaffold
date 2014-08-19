@@ -19,15 +19,15 @@ $half-black: 					rgba(0,0,0,.5);
 
 
 // GENERAL COLOR APPLICATION -------------
-$site-bg:						$bg-light;
-$site-text: 					$black;
-$link: 							$color-primary;
+$site-bg:						$white;
+$site-text-color: 				$black;
+$link-color:					$color-primary;
 $link-hover: 					$color-accent;
 $link-active: 					$color-accent;
-$link-visited: 					desaturate($color-primary);
+$link-visited: 					desaturate($color-primary, 15%);
 
 // BUTTON -------------
-$button-bg:                   	$primary-color !default;      // button background
+$button-bg:                   	$color-primary !default;      // button background
 $button-text:                 	$white !default;              // button Text
 
 

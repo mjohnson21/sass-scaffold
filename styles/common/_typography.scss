@@ -1,6 +1,5 @@
 body {
-	background-color: $site-bg;
-	color: $site-color;
+	color: $site-text-color;
 	font-family: $font-family-base;
 	font-size: $font-size-base;
 	line-height: $line-height-base;
@@ -30,8 +29,8 @@ em      {   font-style: italic; }
 
 
 h1, h3, h3, h4, h5 {
-	font-family: $headings-font-family;
-	font-weight: $headings-font-weight;
+	font-family: $heading-font-family;
+	font-weight: $heading-font-weight;
 	margin: 0 0 1em;
 }
 h1 {
