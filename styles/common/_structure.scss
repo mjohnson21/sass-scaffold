@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $site-bg;
+}
+
+.site-wrapper {
+
+}
+
+.container {
+	max-width: $container-max-width;
+	margin: 0 auto;
+}

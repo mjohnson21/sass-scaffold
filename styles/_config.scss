@@ -1,0 +1,91 @@
+
+
+/* == Color Chart
+===================================================== */
+
+// DEFAULTS -------------
+$color-primary:               	magenta;          // links / accents
+$color-secondary:             	blue;             // nav links and icons
+$color-accent: 					green;
+
+$black:                       	#000000;
+$white:                       	#ffffff;
+$gray-darker:            		rgb(51,49,50) !default;
+$gray-dark:              		rgb(113,115,117) !default;
+$gray:                  		rgb(145,147,150) !default;
+$gray-light:             		rgb(190,192,194) !default;
+$gray-lighter:           		#eee !default;
+$half-black: 					rgba(0,0,0,.5);
+
+
+// GENERAL COLOR APPLICATION -------------
+$site-bg:						$bg-light;
+$site-text: 					$black;
+$link: 							$color-primary;
+$link-hover: 					$color-accent;
+$link-active: 					$color-accent;
+$link-visited: 					desaturate($color-primary);
+
+// BUTTON -------------
+$button-bg:                   	$primary-color !default;      // button background
+$button-text:                 	$white !default;              // button Text
+
+
+
+
+/* == Typography
+===================================================== */
+$font-family-sans-serif:      	"Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:           	Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:       	Monaco, Menlo, Consolas, "Courier New", monospace;
+
+$font-family-base:            	$font-family-sans-serif;
+$font-size-base:              	15px;
+$font-weight-base:            	normal;
+$line-height-base:            	1.5em;
+
+$heading-font-family:        	"Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading-font-weight: 			bold;
+$font-size-h1:                	floor($font-size-base * 2);
+$font-size-h2:                	floor($font-size-base * 1.75);
+$font-size-h3:                	ceil($font-size-base * 1.5);
+$font-size-h4:                	ceil($font-size-base * 1.25);
+
+
+
+
+/* == Structural
+===================================================== */
+$default-padding:             	$font-size-base;
+
+$container-width-max:         	1024px;
+$container-width-min:         	54.84em;
+
+
+
+
+/* == Responsive
+===================================================== */
+$mobile: 					  	320px;
+$tablet:                      	768px;
+$desktop:                     	1024px;
+$wide: 						  	1400px;
+
+$mobile-max:                  	$tablet - 1;
+$tablet-max:                  	$desktop - 1;
+$tablet-min:                  	$tablet;
+$tablet-vert:                 	$tablet;
+$desktop-max: 				  	1400px;
+$phablet-min: 				  	560px;
+
+// usage
+// @media #{$mobile-only} {}
+$mobile-only:  "(max-width: "+$mobile-max+")";
+$tablet-only:  "(min-width: "+$tablet+") and (max-width: "+$tablet-max+")";
+$desktop-only: "(min-width: "+$desktop+")";
+$tablet-up:    "(min-width: "+$tablet+")";
+$phablet-only: "(min-width: "+$phablet-min+") and (max-width: "+$mobile-max+")";
+
+
+
+

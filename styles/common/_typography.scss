@@ -1,0 +1,64 @@
+body {
+	background-color: $site-bg;
+	color: $site-color;
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+}
+
+a {
+	color: $link-color;
+	&:hover {
+		color: $link-hover;
+		text-decoration: none;
+	}
+	&:active {
+		color: $link-active;
+	}
+	&:visited {
+		color: $link-visited;
+	}
+	&:focus, // mj removes dotted borders on mozilla.
+	&:active {
+	    outline: 0;
+	}
+}
+
+
+strong  {   font-weight: bold;  }
+em      {   font-style: italic; }
+
+
+h1, h3, h3, h4, h5 {
+	font-family: $headings-font-family;
+	font-weight: $headings-font-weight;
+	margin: 0 0 1em;
+}
+h1 {
+	font-size: $font-size-h1;
+}
+h2 {
+	font-size: $font-size-h2;
+}
+h3 {
+	font-size: $font-size-h3;
+}
+h4 {
+	font-size: $font-size-h4;
+}
+h5 {
+	font-size: $font-size-h4;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+
+code,
+pre {
+	font-family: monospace, serif;
+    font-size: 1em;
+}
+
+
